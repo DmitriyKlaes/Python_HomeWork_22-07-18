@@ -46,3 +46,25 @@ def simple_polynomial(k):
 
 polynomial_2 = simple_polynomial(k)
 print(polynomial_2)
+
+
+# От препода 1
+
+k = int(input('Задайте натуральную степень k: '))
+arr = []
+for i in range(k, 0, -1):
+    print(f'{rd(0, 100)}x^{i}+', end='')
+print(rd(-100, 100), end='')
+
+
+# От препода 2
+
+k = int(input('Задайте натуральную степень k: '))
+arr = []
+for i in range(k, 0, -1):
+    x = rd(-100, 100)
+    if x > 0:
+        print(f'+{x}x^{i}', end='')
+    else:
+        print(f'{x}x^{i}', end='')
+print(rd(-100, 100), end='')

@@ -22,3 +22,13 @@ accuracy = lambda x, y: int(x * 10 ** y) / 10 ** y
 result = accuracy(pi(), correct_value())
 print(pi())
 print(result)
+
+
+
+
+
+s = int(input('Введите точность: '))
+pi = 0
+for n in range(s):
+    pi += (1 / 16 ** n) * (4 / (8 * n + 1) - 2 / (8 * n + 4) - 1 / (8 * n + 5) - 1 / (8 * n + 6))
+print('Число ПИ: ', round(pi, s))
